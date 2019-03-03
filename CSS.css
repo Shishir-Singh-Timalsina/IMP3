@@ -1,0 +1,53 @@
+
+.webSocketTopic{
+    width: 450px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+}
+#view{
+    width: 440px;
+    height: 300px;
+    padding: 10px;
+    overflow: scroll;
+    background-color: #e1e1ea;
+}
+
+#inputMessage{
+    width: 400px;
+    padding: 5px;
+}
+
+#submit{
+    width: 410px;
+    padding: 10px;
+}
+
+
+.localStorage{
+    margin-top: 20px;
+    width: 450px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+
+}
+
+div.content ul li{
+	list-style: none;
+}
+
+.audioElement{
+    margin-top: 20px;
+    margin-left: 125px;
+    width: 200px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+
+}
+
+.playPauseButtons{
+    margin-left: 20px;
+    padding: 10px;
+}

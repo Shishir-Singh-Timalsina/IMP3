@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="eng-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>IMP LAB 3</title>
+        <!-- External CSS -->
+        <link rel="stylesheet" href="CSS.css">
+        
+        <!-- Javascript -->
+        <script src="javascript.js"></script>
+        <script src="PersonModel.js"></script>
+        <script src="ViewController.js"></script>
+
+    </head>
+    <body>
+        
+        
+        <h2 class="mainHeader">WELCOME TO IMP COURSE (LAB 3)</h2>
+
+        
+        <div class="container">
+            <div class="webSocketTopic">   <!-- Websocket -->
+                <div id="view"></div>   
+                <input id="inputMessage" name="message" type="text" placeholder="Write your message here..."><br>
+                <button id="submit" type="submit" value="Send" onclick="loadWebSocket()">SEND</button>
+            </div>
+
+            <div class="localStorage">  <!-- Local Storage -->
+                
+                <!-- Input name-->
+                Name:
+                <input id="name" type="text">
+                <button onclick="load()">Add Person</button>
+
+                <!--Display names-->
+                <div class="content">
+                    <ul id="list"></ul>
+                </div>
+
+                <!--Javascript-->
+                <script src="localStorage.js"></script>
+
+
+            </div>
+
+            <div class="audioElement">  <!--Audio Elements-->
+                
+                <div class="playPauseButtons">
+                    <input id="play" type="button" value="play" onclick="playPause()">
+                    <input id="stop" type="button" value="stop" onclick="stop()">
+                    <input type="range" value="1" min="0" max="1" step="0.01" onchange="volume(this.value)">
+                </div>
+                <audio id="audio" src="http://stream.basso.fi:8000/stream">
+                    <p>Your browser does not support the <code>audio</code> element </p>
+                </audio>
+
+                <script src="audio.js"></script>
+
+            </div>
+        </div>
+        
+    </body>
+</html>
+
